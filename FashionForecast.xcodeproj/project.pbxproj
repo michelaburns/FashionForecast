@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		514F38037F366A45433AD4DC /* Pods_FashionForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2D3FC29E8328E848AA795 /* Pods_FashionForecastTests.framework */; };
+		B53622FD6423AB841572A144 /* Pods_FashionForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8AE45EFE2B5DF034F18BD4 /* Pods_FashionForecastUITests.framework */; };
+		D1B028CE4FDEA6F4E5B8AA2A /* Pods_FashionForecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67F65E0111C53ABD0742379 /* Pods_FashionForecast.framework */; };
+		EB6ECDB0208CBBBB00953EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ECDAF208CBBBB00953EAA /* AppDelegate.swift */; };
+		EB6ECDB2208CBBBB00953EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ECDB1208CBBBB00953EAA /* ViewController.swift */; };
+		EB6ECDB5208CBBBB00953EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6ECDB3208CBBBB00953EAA /* Main.storyboard */; };
+		EB6ECDB7208CBBBB00953EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6ECDB6208CBBBB00953EAA /* Assets.xcassets */; };
+		EB6ECDBA208CBBBB00953EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6ECDB8208CBBBB00953EAA /* LaunchScreen.storyboard */; };
+		EB6ECDDF208CC0E300953EAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6ECDDE208CC0E300953EAA /* CoreLocation.framework */; };
+		EB9BE5B220998221009DB0C6 /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BE5B120998221009DB0C6 /* Extras.swift */; };
+		EB9BE5B420998352009DB0C6 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BE5B320998352009DB0C6 /* CurrentWeather.swift */; };
+		EB9BE5B620999550009DB0C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BE5B520999550009DB0C6 /* Extensions.swift */; };
+		EB9BE5B82099A456009DB0C6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BE5B72099A456009DB0C6 /* Location.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB6ECDC1208CBBBC00953EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6ECDA4208CBBBB00953EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6ECDAB208CBBBB00953EAA;
+			remoteInfo = FashionForecast;
+		};
+		EB6ECDCC208CBBBC00953EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6ECDA4208CBBBB00953EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6ECDAB208CBBBB00953EAA;
+			remoteInfo = FashionForecast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92FD25AE007533D812EC3F42 /* Pods-FashionForecastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastTests/Pods-FashionForecastTests.release.xcconfig"; sourceTree = "<group>"; };
+		94C2D3FC29E8328E848AA795 /* Pods_FashionForecastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionForecastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9517A1817DF83990F41F8FC3 /* Pods-FashionForecastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastTests/Pods-FashionForecastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9688966801B8C3141A4C8347 /* Pods-FashionForecastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastUITests/Pods-FashionForecastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8D92B2B2D3FC991A6DD3423 /* Pods-FashionForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecast/Pods-FashionForecast.debug.xcconfig"; sourceTree = "<group>"; };
+		E96390EAE66EFFD40BFE0AD8 /* Pods-FashionForecastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastUITests/Pods-FashionForecastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6ECDAC208CBBBB00953EAA /* FashionForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6ECDAF208CBBBB00953EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6ECDB1208CBBBB00953EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB6ECDB4208CBBBB00953EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB6ECDB6208CBBBB00953EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB6ECDB9208CBBBB00953EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB6ECDBB208CBBBB00953EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6ECDC0208CBBBC00953EAA /* FashionForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6ECDCB208CBBBC00953EAA /* FashionForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6ECDDE208CC0E300953EAA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EB9BE5B120998221009DB0C6 /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
+		EB9BE5B320998352009DB0C6 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		EB9BE5B520999550009DB0C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EB9BE5B72099A456009DB0C6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F399F2C8E4E57FA15BD9748C /* Pods-FashionForecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecast/Pods-FashionForecast.release.xcconfig"; sourceTree = "<group>"; };
+		F67F65E0111C53ABD0742379 /* Pods_FashionForecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionForecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8AE45EFE2B5DF034F18BD4 /* Pods_FashionForecastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionForecastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB6ECDA9208CBBBB00953EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6ECDDF208CC0E300953EAA /* CoreLocation.framework in Frameworks */,
+				D1B028CE4FDEA6F4E5B8AA2A /* Pods_FashionForecast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDBD208CBBBC00953EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514F38037F366A45433AD4DC /* Pods_FashionForecastTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDC8208CBBBC00953EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53622FD6423AB841572A144 /* Pods_FashionForecastUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33A098A51B086F1355D7750D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8D92B2B2D3FC991A6DD3423 /* Pods-FashionForecast.debug.xcconfig */,
+				F399F2C8E4E57FA15BD9748C /* Pods-FashionForecast.release.xcconfig */,
+				9517A1817DF83990F41F8FC3 /* Pods-FashionForecastTests.debug.xcconfig */,
+				92FD25AE007533D812EC3F42 /* Pods-FashionForecastTests.release.xcconfig */,
+				E96390EAE66EFFD40BFE0AD8 /* Pods-FashionForecastUITests.debug.xcconfig */,
+				9688966801B8C3141A4C8347 /* Pods-FashionForecastUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB6ECDA3208CBBBB00953EAA = {
+			isa = PBXGroup;
+			children = (
+				EB6ECDAE208CBBBB00953EAA /* FashionForecast */,
+				EB6ECDAD208CBBBB00953EAA /* Products */,
+				EB6ECDDD208CC0E300953EAA /* Frameworks */,
+				33A098A51B086F1355D7750D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EB6ECDAD208CBBBB00953EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB6ECDAC208CBBBB00953EAA /* FashionForecast.app */,
+				EB6ECDC0208CBBBC00953EAA /* FashionForecastTests.xctest */,
+				EB6ECDCB208CBBBC00953EAA /* FashionForecastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB6ECDAE208CBBBB00953EAA /* FashionForecast */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BE5B020997903009DB0C6 /* Extras */,
+				EB9BE5AF209978F1009DB0C6 /* Extensions */,
+				EB9BE5AE209978E1009DB0C6 /* Model */,
+				EB9BE5AC209978B6009DB0C6 /* Controller */,
+				EB6ECDAF208CBBBB00953EAA /* AppDelegate.swift */,
+				EB6ECDB3208CBBBB00953EAA /* Main.storyboard */,
+				EB6ECDB6208CBBBB00953EAA /* Assets.xcassets */,
+				EB6ECDB8208CBBBB00953EAA /* LaunchScreen.storyboard */,
+				EB6ECDBB208CBBBB00953EAA /* Info.plist */,
+			);
+			path = FashionForecast;
+			sourceTree = "<group>";
+		};
+		EB6ECDDD208CC0E300953EAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6ECDDE208CC0E300953EAA /* CoreLocation.framework */,
+				F67F65E0111C53ABD0742379 /* Pods_FashionForecast.framework */,
+				94C2D3FC29E8328E848AA795 /* Pods_FashionForecastTests.framework */,
+				FC8AE45EFE2B5DF034F18BD4 /* Pods_FashionForecastUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB9BE5AC209978B6009DB0C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB6ECDB1208CBBBB00953EAA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB9BE5AE209978E1009DB0C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BE5B320998352009DB0C6 /* CurrentWeather.swift */,
+				EB9BE5B72099A456009DB0C6 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB9BE5AF209978F1009DB0C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BE5B520999550009DB0C6 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB9BE5B020997903009DB0C6 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BE5B120998221009DB0C6 /* Extras.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB6ECDAB208CBBBB00953EAA /* FashionForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6ECDD4208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecast" */;
+			buildPhases = (
+				2A29AAB908FE752906C5781B /* [CP] Check Pods Manifest.lock */,
+				EB6ECDA8208CBBBB00953EAA /* Sources */,
+				EB6ECDA9208CBBBB00953EAA /* Frameworks */,
+				EB6ECDAA208CBBBB00953EAA /* Resources */,
+				3009353CA09518155A5E476B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FashionForecast;
+			productName = FashionForecast;
+			productReference = EB6ECDAC208CBBBB00953EAA /* FashionForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB6ECDBF208CBBBC00953EAA /* FashionForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6ECDD7208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecastTests" */;
+			buildPhases = (
+				728F8A4B6BD56E209A584EBE /* [CP] Check Pods Manifest.lock */,
+				EB6ECDBC208CBBBC00953EAA /* Sources */,
+				EB6ECDBD208CBBBC00953EAA /* Frameworks */,
+				EB6ECDBE208CBBBC00953EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6ECDC2208CBBBC00953EAA /* PBXTargetDependency */,
+			);
+			name = FashionForecastTests;
+			productName = FashionForecastTests;
+			productReference = EB6ECDC0208CBBBC00953EAA /* FashionForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB6ECDCA208CBBBC00953EAA /* FashionForecastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6ECDDA208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecastUITests" */;
+			buildPhases = (
+				5BEF4D96CE68423178D2AD41 /* [CP] Check Pods Manifest.lock */,
+				EB6ECDC7208CBBBC00953EAA /* Sources */,
+				EB6ECDC8208CBBBC00953EAA /* Frameworks */,
+				EB6ECDC9208CBBBC00953EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6ECDCD208CBBBC00953EAA /* PBXTargetDependency */,
+			);
+			name = FashionForecastUITests;
+			productName = FashionForecastUITests;
+			productReference = EB6ECDCB208CBBBC00953EAA /* FashionForecastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB6ECDA4208CBBBB00953EAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Michela;
+				TargetAttributes = {
+					EB6ECDAB208CBBBB00953EAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EB6ECDBF208CBBBC00953EAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB6ECDAB208CBBBB00953EAA;
+					};
+					EB6ECDCA208CBBBC00953EAA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB6ECDAB208CBBBB00953EAA;
+					};
+				};
+			};
+			buildConfigurationList = EB6ECDA7208CBBBB00953EAA /* Build configuration list for PBXProject "FashionForecast" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB6ECDA3208CBBBB00953EAA;
+			productRefGroup = EB6ECDAD208CBBBB00953EAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB6ECDAB208CBBBB00953EAA /* FashionForecast */,
+				EB6ECDBF208CBBBC00953EAA /* FashionForecastTests */,
+				EB6ECDCA208CBBBC00953EAA /* FashionForecastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB6ECDAA208CBBBB00953EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6ECDBA208CBBBB00953EAA /* LaunchScreen.storyboard in Resources */,
+				EB6ECDB7208CBBBB00953EAA /* Assets.xcassets in Resources */,
+				EB6ECDB5208CBBBB00953EAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDBE208CBBBC00953EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDC9208CBBBC00953EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A29AAB908FE752906C5781B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionForecast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3009353CA09518155A5E476B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FashionForecast/Pods-FashionForecast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionForecast/Pods-FashionForecast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BEF4D96CE68423178D2AD41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionForecastUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728F8A4B6BD56E209A584EBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionForecastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB6ECDA8208CBBBB00953EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9BE5B620999550009DB0C6 /* Extensions.swift in Sources */,
+				EB6ECDB2208CBBBB00953EAA /* ViewController.swift in Sources */,
+				EB9BE5B220998221009DB0C6 /* Extras.swift in Sources */,
+				EB9BE5B420998352009DB0C6 /* CurrentWeather.swift in Sources */,
+				EB9BE5B82099A456009DB0C6 /* Location.swift in Sources */,
+				EB6ECDB0208CBBBB00953EAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDBC208CBBBC00953EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6ECDC7208CBBBC00953EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB6ECDC2208CBBBC00953EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6ECDAB208CBBBB00953EAA /* FashionForecast */;
+			targetProxy = EB6ECDC1208CBBBC00953EAA /* PBXContainerItemProxy */;
+		};
+		EB6ECDCD208CBBBC00953EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6ECDAB208CBBBB00953EAA /* FashionForecast */;
+			targetProxy = EB6ECDCC208CBBBC00953EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB6ECDB3208CBBBB00953EAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6ECDB4208CBBBB00953EAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB6ECDB8208CBBBB00953EAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6ECDB9208CBBBB00953EAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB6ECDD2208CBBBC00953EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB6ECDD3208CBBBC00953EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB6ECDD5208CBBBC00953EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D92B2B2D3FC991A6DD3423 /* Pods-FashionForecast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6ECDD6208CBBBC00953EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F399F2C8E4E57FA15BD9748C /* Pods-FashionForecast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB6ECDD8208CBBBC00953EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9517A1817DF83990F41F8FC3 /* Pods-FashionForecastTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionForecast.app/FashionForecast";
+			};
+			name = Debug;
+		};
+		EB6ECDD9208CBBBC00953EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92FD25AE007533D812EC3F42 /* Pods-FashionForecastTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionForecast.app/FashionForecast";
+			};
+			name = Release;
+		};
+		EB6ECDDB208CBBBC00953EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96390EAE66EFFD40BFE0AD8 /* Pods-FashionForecastUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionForecast;
+			};
+			name = Debug;
+		};
+		EB6ECDDC208CBBBC00953EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9688966801B8C3141A4C8347 /* Pods-FashionForecastUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FashionForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionForecast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB6ECDA7208CBBBB00953EAA /* Build configuration list for PBXProject "FashionForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6ECDD2208CBBBC00953EAA /* Debug */,
+				EB6ECDD3208CBBBC00953EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6ECDD4208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6ECDD5208CBBBC00953EAA /* Debug */,
+				EB6ECDD6208CBBBC00953EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6ECDD7208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6ECDD8208CBBBC00953EAA /* Debug */,
+				EB6ECDD9208CBBBC00953EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6ECDDA208CBBBC00953EAA /* Build configuration list for PBXNativeTarget "FashionForecastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6ECDDB208CBBBC00953EAA /* Debug */,
+				EB6ECDDC208CBBBC00953EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB6ECDA4208CBBBB00953EAA /* Project object */;
+}
