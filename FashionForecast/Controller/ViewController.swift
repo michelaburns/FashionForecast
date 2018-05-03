@@ -104,12 +104,41 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
                 print("Swipe right")
-                myCloset.append(outfitArray[arrayIndex]) //add right swiped items to closet
-                outfitImage.image = outfitArray[arrayIndex+1]
+                
+                //If you haven't reached the end of the outfit suggestions
+                if arrayIndex < (outfitArray.count-1)
+                {
+                    myCloset.append(outfitArray[arrayIndex]) //add right swiped items to closet
+                    arrayIndex = arrayIndex + 1
+                    outfitImage.image = outfitArray[arrayIndex]
+                }
+                    
+                    //If you reached the end of the outfit suggestions
+                else
+                {
+                    outfitImage.image = #imageLiteral(resourceName: "Nomore")
+                    break //No more swiping
+                }
+                
+                
                 
             case UISwipeGestureRecognizerDirection.left:
                 print("Swipe left")
-                outfitImage.image = outfitArray[arrayIndex+1]
+                
+                //If you haven't reached the end of the outfit suggestions
+                if arrayIndex < (outfitArray.count-1)
+                {
+                    arrayIndex = arrayIndex + 1
+                    outfitImage.image = outfitArray[arrayIndex]
+                }
+                
+                //If you reached the end of the outfit suggestions
+                else
+                {
+                    outfitImage.image = #imageLiteral(resourceName: "Nomore")
+                    break  //No more swiping
+                }
+                
             default:
                 break
             }
