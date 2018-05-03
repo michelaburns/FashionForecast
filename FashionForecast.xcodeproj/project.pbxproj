@@ -10,6 +10,7 @@
 		514F38037F366A45433AD4DC /* Pods_FashionForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2D3FC29E8328E848AA795 /* Pods_FashionForecastTests.framework */; };
 		B53622FD6423AB841572A144 /* Pods_FashionForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8AE45EFE2B5DF034F18BD4 /* Pods_FashionForecastUITests.framework */; };
 		D1B028CE4FDEA6F4E5B8AA2A /* Pods_FashionForecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67F65E0111C53ABD0742379 /* Pods_FashionForecast.framework */; };
+		EB59A91B209AECDB00D18348 /* myClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59A91A209AECDB00D18348 /* myClosetViewController.swift */; };
 		EB6ECDB0208CBBBB00953EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ECDAF208CBBBB00953EAA /* AppDelegate.swift */; };
 		EB6ECDB2208CBBBB00953EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6ECDB1208CBBBB00953EAA /* ViewController.swift */; };
 		EB6ECDB5208CBBBB00953EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6ECDB3208CBBBB00953EAA /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		9688966801B8C3141A4C8347 /* Pods-FashionForecastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastUITests/Pods-FashionForecastUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C8D92B2B2D3FC991A6DD3423 /* Pods-FashionForecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecast/Pods-FashionForecast.debug.xcconfig"; sourceTree = "<group>"; };
 		E96390EAE66EFFD40BFE0AD8 /* Pods-FashionForecastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionForecastUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionForecastUITests/Pods-FashionForecastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB59A91A209AECDB00D18348 /* myClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myClosetViewController.swift; path = "../../../FashionForecast-master/FashionForecast/Controller/myClosetViewController.swift"; sourceTree = "<group>"; };
 		EB6ECDAC208CBBBB00953EAA /* FashionForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6ECDAF208CBBBB00953EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6ECDB1208CBBBB00953EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6ECDB1208CBBBB00953EAA /* ViewController.swift */,
+				EB59A91A209AECDB00D18348 /* myClosetViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				EB6ECDB2208CBBBB00953EAA /* ViewController.swift in Sources */,
 				EB9BE5B220998221009DB0C6 /* Extras.swift in Sources */,
 				EB9BE5B420998352009DB0C6 /* CurrentWeather.swift in Sources */,
+				EB59A91B209AECDB00D18348 /* myClosetViewController.swift in Sources */,
 				EB9BE5B82099A456009DB0C6 /* Location.swift in Sources */,
 				EB6ECDB0208CBBBB00953EAA /* AppDelegate.swift in Sources */,
 			);

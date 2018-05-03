@@ -17,26 +17,76 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--My Closet View Controller-->
         <scene sceneID="EZU-GI-0uc">
             <objects>
-                <viewController id="1B6-1q-r51" sceneMemberID="viewController">
+                <viewController id="1B6-1q-r51" customClass="myClosetViewController" customModule="FashionForecast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVw-Ro-XoH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Closet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBE-4d-7IH">
-                                <rect key="frame" x="66" y="20" width="242" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Closet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU7-Un-vwv">
+                                <rect key="frame" x="66" y="20" width="242" height="32"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-qL-aoA">
+                                <rect key="frame" x="0.0" y="59" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jtu-oO-Qcw">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="zWn-tp-Vyb" customClass="imageCell" customModule="FashionForecast" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZuY-wx-cim">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZuY-wx-cim" secondAttribute="bottom" id="JPZ-Wx-xNF"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZuY-wx-cim" secondAttribute="trailing" id="abr-Or-RQg"/>
+                                            <constraint firstItem="ZuY-wx-cim" firstAttribute="top" secondItem="zWn-tp-Vyb" secondAttribute="top" id="qqD-CT-huy"/>
+                                            <constraint firstItem="ZuY-wx-cim" firstAttribute="leading" secondItem="zWn-tp-Vyb" secondAttribute="leading" id="xrl-fT-fVy"/>
+                                        </constraints>
+                                        <size key="customSize" width="180" height="180"/>
+                                        <connections>
+                                            <outlet property="closetImage" destination="ZuY-wx-cim" id="XuE-Xd-xZf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="1B6-1q-r51" id="o1X-Bc-4OD"/>
+                                    <outlet property="delegate" destination="1B6-1q-r51" id="6sc-Lb-0NB"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5hf-qL-aoA" secondAttribute="trailing" id="0H6-qI-DHW"/>
+                            <constraint firstItem="DY7-xd-556" firstAttribute="bottom" secondItem="5hf-qL-aoA" secondAttribute="bottom" constant="12" id="1nx-F2-f5y"/>
+                            <constraint firstItem="WU7-Un-vwv" firstAttribute="top" secondItem="hVw-Ro-XoH" secondAttribute="topMargin" id="6Aj-1G-Ybm"/>
+                            <constraint firstItem="5hf-qL-aoA" firstAttribute="top" secondItem="WU7-Un-vwv" secondAttribute="bottom" constant="7" id="Flm-Jv-FS6"/>
+                            <constraint firstItem="WU7-Un-vwv" firstAttribute="centerX" secondItem="5hf-qL-aoA" secondAttribute="centerX" id="IDd-1A-MzD"/>
+                            <constraint firstItem="5hf-qL-aoA" firstAttribute="leading" secondItem="hVw-Ro-XoH" secondAttribute="leading" id="doE-eB-USr"/>
+                            <constraint firstItem="WU7-Un-vwv" firstAttribute="leading" secondItem="DY7-xd-556" secondAttribute="leading" constant="66" id="fCW-Ap-skU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DY7-xd-556"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ClosetIcon" id="ytg-sA-1Gv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="5hf-qL-aoA" id="Z8s-Zb-O6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aa9-3b-bSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

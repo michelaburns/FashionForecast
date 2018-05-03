@@ -9,6 +9,8 @@
 import UIKit
 import CoreLocation //Allows us to use GPS
 
+var myCloset: [UIImage] = [] //Global so it can be reached from other view controllers
+
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     //Outlets
@@ -25,7 +27,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var currentLocation:CLLocation!
     var outfitArray: [UIImage] = []
     var arrayIndex = 0
-    var myCloset: [UIImage] = []
+    
 
     var snowOutfits = [#imageLiteral(resourceName: "snow1"), #imageLiteral(resourceName: "snow2"), #imageLiteral(resourceName: "snow3"), #imageLiteral(resourceName: "snow4"), #imageLiteral(resourceName: "snow5"), #imageLiteral(resourceName: "snow6"), #imageLiteral(resourceName: "snow7"), #imageLiteral(resourceName: "snow8"), #imageLiteral(resourceName: "snow9"),#imageLiteral(resourceName: "snow10"), #imageLiteral(resourceName: "snow11"), #imageLiteral(resourceName: "snow12")]
     var sunnyOutfits = [#imageLiteral(resourceName: "sunny1"), #imageLiteral(resourceName: "sunny2"), #imageLiteral(resourceName: "sunny3"), #imageLiteral(resourceName: "sunny4"), #imageLiteral(resourceName: "sunny5"), #imageLiteral(resourceName: "sunny6"), #imageLiteral(resourceName: "sunny7"), #imageLiteral(resourceName: "sunny8"), #imageLiteral(resourceName: "sunny9"), #imageLiteral(resourceName: "sunny10"), #imageLiteral(resourceName: "sunny11"), #imageLiteral(resourceName: "sunny12"), #imageLiteral(resourceName: "sunny13"), #imageLiteral(resourceName: "sunny14"), #imageLiteral(resourceName: "sunny15"), #imageLiteral(resourceName: "sunny16"), #imageLiteral(resourceName: "sunny17"), #imageLiteral(resourceName: "sunny18"), #imageLiteral(resourceName: "sunny19"), #imageLiteral(resourceName: "sunny20"), #imageLiteral(resourceName: "sunny21"), #imageLiteral(resourceName: "sunny22"), #imageLiteral(resourceName: "sunny23"), #imageLiteral(resourceName: "sunny24"), #imageLiteral(resourceName: "sunny25"), #imageLiteral(resourceName: "sunny26"), #imageLiteral(resourceName: "sunny27"), #imageLiteral(resourceName: "sunny28"), #imageLiteral(resourceName: "sunny29"), #imageLiteral(resourceName: "sunny30"), #imageLiteral(resourceName: "sunny31"), #imageLiteral(resourceName: "sunny32"), #imageLiteral(resourceName: "sunny33"), #imageLiteral(resourceName: "sunny34"), #imageLiteral(resourceName: "sunny35"), #imageLiteral(resourceName: "sunny36"), #imageLiteral(resourceName: "sunny27")]
