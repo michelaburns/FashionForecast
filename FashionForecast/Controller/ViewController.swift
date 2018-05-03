@@ -23,6 +23,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //Variables
     var currentWeather:CurrentWeather!
     var currentLocation:CLLocation!
+    var outfitArray: [UIImage] = []
+    var arrayIndex = 0
+    var myCloset: [UIImage] = []
 
     var snowOutfits = [#imageLiteral(resourceName: "snow1"), #imageLiteral(resourceName: "snow2"), #imageLiteral(resourceName: "snow3"), #imageLiteral(resourceName: "snow4"), #imageLiteral(resourceName: "snow5"), #imageLiteral(resourceName: "snow6"), #imageLiteral(resourceName: "snow7"), #imageLiteral(resourceName: "snow8"), #imageLiteral(resourceName: "snow9"),#imageLiteral(resourceName: "snow10"), #imageLiteral(resourceName: "snow11"), #imageLiteral(resourceName: "snow12")]
     var sunnyOutfits = [#imageLiteral(resourceName: "sunny1"), #imageLiteral(resourceName: "sunny2"), #imageLiteral(resourceName: "sunny3"), #imageLiteral(resourceName: "sunny4"), #imageLiteral(resourceName: "sunny5"), #imageLiteral(resourceName: "sunny6"), #imageLiteral(resourceName: "sunny7"), #imageLiteral(resourceName: "sunny8"), #imageLiteral(resourceName: "sunny9"), #imageLiteral(resourceName: "sunny10"), #imageLiteral(resourceName: "sunny11"), #imageLiteral(resourceName: "sunny12"), #imageLiteral(resourceName: "sunny13"), #imageLiteral(resourceName: "sunny14"), #imageLiteral(resourceName: "sunny15"), #imageLiteral(resourceName: "sunny16"), #imageLiteral(resourceName: "sunny17"), #imageLiteral(resourceName: "sunny18"), #imageLiteral(resourceName: "sunny19"), #imageLiteral(resourceName: "sunny20"), #imageLiteral(resourceName: "sunny21"), #imageLiteral(resourceName: "sunny22"), #imageLiteral(resourceName: "sunny23"), #imageLiteral(resourceName: "sunny24"), #imageLiteral(resourceName: "sunny25"), #imageLiteral(resourceName: "sunny26"), #imageLiteral(resourceName: "sunny27"), #imageLiteral(resourceName: "sunny28"), #imageLiteral(resourceName: "sunny29"), #imageLiteral(resourceName: "sunny30"), #imageLiteral(resourceName: "sunny31"), #imageLiteral(resourceName: "sunny32"), #imageLiteral(resourceName: "sunny33"), #imageLiteral(resourceName: "sunny34"), #imageLiteral(resourceName: "sunny35"), #imageLiteral(resourceName: "sunny36"), #imageLiteral(resourceName: "sunny27")]
@@ -36,8 +39,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         //UI hardcoding
         
+        //Borders
         doubleBorder.layer.borderColor = UIColor.black.cgColor
         doubleBorder.layer.borderWidth = 3
+        
+        //Swipe functionality
+        outfitImage.isUserInteractionEnabled = true
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        outfitImage.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        outfitImage.addGestureRecognizer(swipeLeft)
         
         callDelegates()
         currentWeather = CurrentWeather()
@@ -46,6 +61,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         locationAuthCheck() //App has opened so it's time to ask for permission
+        
         
     }
     
@@ -82,6 +98,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    @objc func swipeGesture(sender: UISwipeGestureRecognizer) {
+        if let swipeGesture = sender as? UISwipeGestureRecognizer
+        {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                print("Swipe right")
+                myCloset.append(outfitArray[arrayIndex]) //add right swiped items to closet
+                outfitImage.image = outfitArray[arrayIndex+1]
+                
+            case UISwipeGestureRecognizerDirection.left:
+                print("Swipe left")
+                outfitImage.image = outfitArray[arrayIndex+1]
+            default:
+                break
+            }
+        }
+    }
+    
     func updateUI(){
         temperatureLabel.text = "\(currentWeather.currentTemp)" + " °F" + " | " + currentWeather.weatherType
         //weatherIcon.image = currentWeather.weatherImage
@@ -89,25 +123,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //Rainy Outfits
         if (currentWeather.weatherType.contains("Rain") || currentWeather.weatherType.contains("Mist"))
         {
-            outfitImage.image = rainOutfits[0]
+            outfitArray = rainOutfits
+            outfitImage.image = outfitArray[arrayIndex]
         }
         
         //Mild Outfits
         else if (currentWeather.weatherType.contains("Cloud") || currentWeather.currentTemp<70)
         {
-            outfitImage.image = mildOutfits[0]
+            outfitArray = mildOutfits
+            outfitImage.image = outfitArray[arrayIndex]
         }
 
         //Sunny Outfits
         else if (currentWeather.currentTemp>=70 || currentWeather.weatherType.contains("Clear"))
         {
-            outfitImage.image = sunnyOutfits[0]
+            outfitArray = sunnyOutfits
+            outfitImage.image = outfitArray[arrayIndex]
         }
         
         //Snow Outfits
         else if (currentWeather.weatherType.contains("Snow"))
         {
-           outfitImage.image = snowOutfits[0]
+            outfitArray = snowOutfits
+            outfitImage.image = outfitArray[arrayIndex]
         }
     }
     
